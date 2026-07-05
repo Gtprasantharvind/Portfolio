@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GT Prasanth Arvind — Structural Engineer · BIM Engineer</title>
+<meta name="description" content="Portfolio of GT Prasanth Arvind — Structural Engineer and BIM Engineer.">
+<meta property="og:title" content="GT Prasanth Arvind — Structural Engineer · BIM Engineer">
+<meta property="og:description" content="Multi-storey structural design, BIM coordination, clash detection and 4D simulation. From concept to construction.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preload" as="image" href="assets/cut_towerbig.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Lora:ital@1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07090c; --bg2:#0b0e13; --card:#10141a; --line:rgba(140,190,220,.14);
+  --text:#eef2f5; --muted:#8b98a5; --accent:#56C8F0;
+  --d:'Space Grotesk',sans-serif; --s:'Lora',serif; --m:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:var(--bg);color:var(--text)}
+body{font-family:var(--d);line-height:1.6;overflow-x:hidden}
+img{display:block;width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent);color:#06222e}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#232c36;border-radius:6px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+#bgfx{position:fixed;inset:0;z-index:0;pointer-events:none}
+section,footer{position:relative;z-index:2}
+.serif{font-family:var(--s);font-style:italic}
+.mono{font-family:var(--m)}
+@media(hover:hover){body,a,.tile{cursor:none}}
+
+/* ---------- preloader ---------- */
+#loader{position:fixed;inset:0;z-index:1000;background:#05070a;display:flex;align-items:flex-end;justify-content:space-between;padding:34px 38px}
+#loader .pct{font-family:var(--d);font-weight:700;font-size:clamp(70px,14vw,180px);line-height:.8;color:var(--text)}
+#loader .tag{font-family:var(--m);font-size:11px;letter-spacing:.3em;color:var(--muted);margin-bottom:14px}
+#loader .bar{position:absolute;top:0;left:0;height:2px;width:0%;background:var(--accent)}
+
+/* ---------- custom cursor ---------- */
+#cur{position:fixed;z-index:900;width:10px;height:10px;border-radius:50%;background:var(--accent);pointer-events:none;transform:translate(-50%,-50%);transition:width .25s,height .25s,background .25s}
+#cur-ring{position:fixed;z-index:899;width:38px;height:38px;border-radius:50%;border:1px solid rgba(86,200,240,.5);pointer-events:none;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;font-family:var(--m);font-size:0;letter-spacing:.14em;color:#06222e;transition:width .3s,height .3s,font-size .2s,background .3s}
+#cur-ring.big{width:86px;height:86px;background:var(--accent);border-color:var(--accent);font-size:10px}
+@media(hover:none){#cur,#cur-ring{display:none}}
+
+/* ---------- fixed chrome ---------- */
+.chrome{position:fixed;z-index:120;font-family:var(--m);font-size:11px;letter-spacing:.14em;color:var(--muted)}
+#brand{top:26px;left:30px}#brand b{color:var(--text)}#brand i{color:var(--accent);font-style:normal}
+#counter{bottom:26px;left:30px;transition:opacity .35s,transform .35s}
+#counter b{color:var(--accent);font-size:15px}
+#counter.hide{opacity:0;transform:translateY(8px);pointer-events:none}
+#contact-link{top:22px;right:30px;padding:9px 18px;border:1px solid var(--line);border-radius:99px;background:rgba(10,13,17,.55);backdrop-filter:blur(10px);color:var(--text)}
+#contact-link:hover{border-color:var(--accent);color:var(--accent)}
+#atlas-link{top:22px;right:140px;padding:9px 18px;border:1px solid var(--line);border-radius:99px;background:rgba(10,13,17,.55);backdrop-filter:blur(10px);color:var(--muted)}
+#atlas-link:hover{border-color:var(--accent);color:var(--accent)}
+@media(max-width:820px){#atlas-link{display:none}}
+#progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--accent);z-index:210}
+
+/* ---------- hero ---------- */
+#hero{position:relative;height:100svh;overflow:hidden;display:flex;align-items:flex-end}
+#three-wrap{position:absolute;inset:0}
+.hero-in{position:relative;z-index:2;width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px) 9vh}
+.hero-eyebrow{font-family:var(--m);font-size:11.5px;letter-spacing:.32em;color:var(--accent);text-transform:uppercase}
+.h-line{overflow:hidden;padding-bottom:.06em}
+h1{font-size:clamp(54px,10.5vw,148px);font-weight:700;line-height:.94;letter-spacing:-.03em;text-transform:uppercase}
+h1 .ghost{color:transparent;-webkit-text-stroke:1.5px rgba(238,242,245,.5)}
+h1 .w{display:inline-block;transform:translateY(115%)}
+.hero-serif{font-family:var(--s);font-style:italic;font-size:clamp(17px,2.4vw,26px);color:#9fb6c4;margin-top:16px;opacity:0}
+.hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-top:32px;padding-top:22px;border-top:1px solid var(--line);opacity:0}
+.hero-row p{max-width:470px;color:var(--muted);font-size:15px}
+.hero-row p b{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:99px;font-size:14px;font-weight:500;transition:.25s;will-change:transform}
+.btn-solid{background:var(--accent);color:#06222e}
+.btn-line{border:1px solid rgba(255,255,255,.22)}
+.actions{display:flex;gap:12px}
+#scroll-cue{position:absolute;bottom:26px;right:30px;z-index:3;font-family:var(--m);font-size:10.5px;letter-spacing:.26em;color:var(--muted);writing-mode:vertical-rl;display:flex;align-items:center;gap:10px}
+#scroll-cue::after{content:'';width:1px;height:46px;background:linear-gradient(180deg,var(--accent),transparent);animation:drop 1.8s ease-in-out infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}55%{transform:scaleY(1);transform-origin:top}56%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- pinned word-reveal intro ---------- */
+#intro .pin-box{height:100svh;display:flex;align-items:center}
+#intro p{font-size:clamp(24px,3.6vw,44px);line-height:1.35;font-weight:500;max-width:1050px}
+#intro p .wd{opacity:.13}
+#intro p .serif{color:#9fb6c4}
+.ch-label{font-family:var(--m);font-size:11px;letter-spacing:.3em;color:var(--accent);text-transform:uppercase;margin-bottom:22px;display:flex;align-items:center;gap:12px}
+.ch-label::before{content:'';width:34px;height:1px;background:var(--accent)}
+
+/* ---------- quotes ---------- */
+.quote{min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px}
+.quote .ql{overflow:hidden}
+.quote .ql span{display:block;font-family:var(--s);font-style:italic;font-size:clamp(22px,3.4vw,38px);line-height:1.4;color:#dfe8ee;transform:translateY(110%)}
+.quote .who{font-family:var(--m);font-size:11px;letter-spacing:.3em;color:var(--muted);margin-top:30px;text-transform:uppercase;opacity:0}
+.quote::before{content:'';width:44px;height:2px;background:var(--accent);margin-bottom:38px}
+
+/* ---------- BST title ---------- */
+#bst{padding:16vh 0 6vh}
+h2.ch-title{font-size:clamp(38px,6vw,84px);font-weight:700;letter-spacing:-.02em;line-height:1;text-transform:uppercase}
+h2.ch-title .serif{text-transform:none;font-weight:400;color:#9fb6c4}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{font-family:var(--m);font-size:11px;padding:8px 15px;border-radius:99px;background:var(--bg2);border:1px solid var(--line);color:var(--muted);letter-spacing:.04em}
+.chip b{color:var(--text)}
+
+/* ---------- horizontal gallery ---------- */
+#hgal{overflow:hidden}
+#htrack{display:flex;gap:3vw;padding:0 6vw;align-items:center;height:100svh;width:max-content}
+.hpanel{position:relative;width:72vw;max-width:1100px;height:74vh;border-radius:18px;overflow:hidden;flex-shrink:0;background:var(--card);border:1px solid var(--line)}
+.hpanel img.ph{height:100%;width:100%;object-fit:cover}
+.hpanel .idx{position:absolute;top:18px;left:22px;font-family:var(--m);font-size:11px;letter-spacing:.2em;color:#fff;background:rgba(7,9,12,.55);backdrop-filter:blur(8px);padding:7px 13px;border-radius:99px;z-index:3}
+.hpanel .lab{position:absolute;bottom:0;left:0;right:0;padding:70px 26px 22px;background:linear-gradient(180deg,transparent,rgba(5,7,9,.85));z-index:2}
+.hpanel .lab .serif{font-size:clamp(17px,2vw,24px);color:#e9eef2}
+.hpanel .lab .mono{display:block;font-size:10.5px;letter-spacing:.18em;color:var(--muted);margin-top:5px}
+.hpanel.dark-panel{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5vh 4vw;background:radial-gradient(700px 340px at 70% 10%,rgba(86,200,240,.08),transparent 60%),var(--bg2)}
+.hpanel.dark-panel img{max-height:56vh;width:auto;max-width:92%;filter:drop-shadow(0 0 34px rgba(86,200,240,.18)) drop-shadow(0 22px 40px rgba(0,0,0,.5))}
+.hpanel.dark-panel .fcap{font-family:var(--m);font-size:11px;color:var(--muted);margin-top:22px;letter-spacing:.1em;text-align:center}
+.hpanel.dark-panel .fcap i{color:var(--accent);font-style:normal;margin-right:8px}
+.hpanel .trio{display:flex;gap:4vw;align-items:flex-end;justify-content:center;width:100%}
+.hpanel .trio figure{text-align:center;flex:1;min-width:0}
+.hpanel .trio img{max-height:48vh;margin:0 auto}
+.hpanel.paper{background:#eef1f4}
+.hpanel.paper .fcap{color:#5b6570}
+.hpanel.paper img{filter:none}
+
+/* ---------- quiet scale scene ---------- */
+#quiet{padding:14vh 0}
+#quiet .frame{width:100%;height:92vh;border-radius:22px;overflow:hidden;position:relative;transform:scale(.78);will-change:transform}
+#quiet img{height:100%;object-fit:cover;object-position:50% 30%}
+#quiet .qcap{position:absolute;left:0;right:0;bottom:0;padding:110px 30px 32px;background:linear-gradient(180deg,transparent,rgba(7,9,12,.85));display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap}
+#quiet .serif{font-size:clamp(18px,2.6vw,28px);color:#e9eef2}
+#quiet .mono{font-size:11px;letter-spacing:.2em;color:var(--muted)}
+
+/* ---------- sheets parallax columns ---------- */
+#sheets{padding:16vh 0}
+.sheet-cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px;align-items:start}
+.scol{display:flex;flex-direction:column;gap:18px;will-change:transform}
+.sheet{position:relative;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--line);padding:10px}
+.sheet img{width:100%;height:auto}
+.sheet .cap{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 13px;font-family:var(--m);font-size:10.5px;letter-spacing:.08em;color:#eee;background:linear-gradient(180deg,transparent,rgba(0,0,0,.8));opacity:0;transition:.3s}
+.sheet:hover .cap{opacity:1}
+.sheet .cap i{color:var(--accent);font-style:normal;margin-right:8px}
+@media(max-width:760px){.sheet-cols{grid-template-columns:1fr}}
+
+/* ---------- ETABS ---------- */
+#etabs{padding:16vh 0;position:relative;overflow:hidden}
+#etabs .bignum{position:absolute;right:-2vw;top:6vh;font-size:clamp(160px,30vw,420px);font-weight:700;color:transparent;-webkit-text-stroke:1.5px rgba(86,200,240,.14);line-height:.8;pointer-events:none}
+.ak-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,44px);margin-top:44px}
+.ak-card{padding:clamp(24px,3vw,44px);border:1px solid var(--line);border-radius:16px;text-align:center;
+  background:radial-gradient(600px 300px at 70% 8%,rgba(86,200,240,.07),transparent 60%),var(--bg2);will-change:transform;opacity:0;transform:translateY(60px)}
+.ak-card img{max-height:330px;width:auto;max-width:100%;margin:0 auto;filter:drop-shadow(0 0 30px rgba(86,200,240,.15)) drop-shadow(0 18px 34px rgba(0,0,0,.5))}
+.ak-card .fcap{font-family:var(--m);font-size:11px;color:var(--muted);margin-top:18px;letter-spacing:.08em}
+.ak-card .fcap i{color:var(--accent);font-style:normal;margin-right:8px}
+@media(max-width:760px){.ak-grid{grid-template-columns:1fr}}
+
+/* ---------- experience ---------- */
+#xp{padding:14vh 0 8vh}
+.xp-row{display:grid;grid-template-columns:190px 1fr;gap:26px;padding:34px 0;border-bottom:1px solid var(--line);opacity:0;transform:translateY(40px)}
+.xp-row:first-of-type{border-top:1px solid var(--line)}
+.xp-row .when{font-family:var(--m);font-size:11.5px;color:var(--accent);letter-spacing:.12em}
+.xp-row h3{font-size:clamp(18px,2.2vw,24px);font-weight:600}
+.xp-row .org{color:var(--muted);font-size:13px;font-family:var(--m)}
+.xp-row p{color:#aab4bd;font-size:14.5px;margin-top:10px;max-width:72ch}
+@media(max-width:700px){.xp-row{grid-template-columns:1fr;gap:8px}}
+.edu{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.edu>div{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:24px}
+.edu .when{font-family:var(--m);font-size:10.5px;color:var(--accent);letter-spacing:.12em}
+.edu h4{font-size:15.5px;margin-top:10px}
+.edu p{color:var(--muted);font-size:12.5px;margin-top:6px}
+@media(max-width:820px){.edu{grid-template-columns:1fr}}
+
+/* ---------- contact ---------- */
+#contact{min-height:92vh;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:10vh 24px}
+#contact .cta{font-size:clamp(46px,9.5vw,130px);font-weight:700;line-height:.96;letter-spacing:-.02em;text-transform:uppercase}
+#contact .cta .h-line{display:block}
+#contact .cta .w{display:inline-block;transform:translateY(115%)}
+#contact .cta .serif{text-transform:none;font-weight:400;color:#9fb6c4;font-size:.6em}
+#contact p.sub{color:var(--muted);max-width:480px;margin:30px auto 42px}
+.c-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.c-links a,.c-links span{display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border-radius:99px;border:1px solid var(--line);background:var(--bg2);font-size:13px;font-family:var(--m);transition:border .25s,color .25s;will-change:transform}
+.c-links a:hover{border-color:var(--accent);color:var(--accent)}
+.c-links i{font-style:normal;color:var(--accent)}
+footer{padding:28px 30px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--m);font-size:11px;letter-spacing:.1em;color:var(--muted)}
+
+/* ---------- no-fx fallback: content fully visible if animation libs unavailable ---------- */
+.no-fx h1 .w,.no-fx .ch-title .w,.no-fx #contact .cta .w{transform:none!important}
+.no-fx .hero-serif,.no-fx .hero-row,.no-fx .quote .who,.no-fx .ak-card,.no-fx .xp-row{opacity:1!important;transform:none!important}
+.no-fx .quote .ql span{transform:none!important}
+.no-fx #intro p .wd{opacity:1!important}
+.no-fx #intro .pin-box{height:auto;padding:14vh 0}
+.no-fx #quiet .frame{transform:none!important}
+.no-fx #htrack{height:auto;padding:8vh 6vw}
+.no-fx .hpanel{width:86vw;height:64vh}
+
+/* ---------- lightbox ---------- */
+#lb{position:fixed;inset:0;background:rgba(5,7,9,.96);display:none;align-items:center;justify-content:center;z-index:800;padding:28px}
+#lb.open{display:flex}
+#lb img{max-width:100%;max-height:92vh;width:auto;border-radius:8px}
+#lb .nav{position:absolute;top:50%;transform:translateY(-50%);font-size:34px;color:#7a8894;padding:20px;user-select:none}
+#lb .nav:hover{color:var(--accent)}
+#lb .prev{left:8px}#lb .next{right:8px}
+</style>
+</head>
+<body>
+
+<div id="loader"><div class="bar"></div><div><div class="tag">GT PRASANTH ARVIND — PORTFOLIO 2026</div><div class="pct">0</div></div><div class="tag">LOADING MODEL DATA</div></div>
+<canvas id="bgfx"></canvas>
+<div id="cur"></div><div id="cur-ring"></div>
+<div id="progress"></div>
+<div class="chrome" id="brand"><b>GT</b><i>·</i>PRASANTH ARVIND</div>
+<a class="chrome" id="atlas-link" href="map.html" data-cursor="MAP">Atlas</a>
+<a class="chrome" id="contact-link" href="#contact">Let's talk</a>
+<div class="chrome" id="counter"><b>01</b> / 06</div>
+
+<!-- HERO -->
+<section id="hero" data-ch="01">
+  <div id="three-wrap"></div>
+  <div class="hero-in">
+    <span class="hero-eyebrow">Structural Engineer · BIM Engineer</span>
+    <h1>
+      <span class="h-line"><span class="w">GT Prasanth</span></span>
+      <span class="h-line"><span class="w ghost">Arvind</span></span>
+    </h1>
+    <div class="hero-serif">from concept to construction</div>
+    <div class="hero-row">
+      <p>I engineer multi-storey structures and deliver them digitally — <b>ETABS to Revit, analysis to coordination</b>. Coimbatore, India. Open to relocation.</p>
+      <div class="actions">
+        <a class="btn btn-solid magnet" href="#bst" data-cursor="GO">Explore work</a>
+        <a class="btn btn-line magnet" href="GT_Prasanth_Arvind_CV.pdf" download data-cursor="CV">Download CV</a>
+      </div>
+    </div>
+  </div>
+  <div id="scroll-cue">SCROLL TO EXPLORE</div>
+</section>
+
+<!-- PINNED WORD REVEAL -->
+<section id="intro" data-ch="02">
+  <div class="pin-box"><div class="wrap">
+    <div class="ch-label">01 — Profile</div>
+    <p id="reveal-p">I work where <span class="serif">analysis</span> meets <span class="serif">detailing</span> — designing RCC and steel structures from G+4 to G+20, and delivering a 21-floor Hong Kong high-rise at LOD 350: authored in Revit, clash-checked in Navisworks, sequenced in 4D. What drives me is the gap between design and execution — <span class="serif">and closing it.</span></p>
+  </div></div>
+</section>
+
+<!-- QUOTE 1 -->
+<section class="quote">
+  <div class="ql"><span>“Architecture is the will of an epoch</span></div>
+  <div class="ql"><span>translated into space.”</span></div>
+  <div class="who">Mies van der Rohe</div>
+</section>
+
+<!-- BST TITLE -->
+<section id="bst" data-ch="03">
+  <div class="wrap">
+    <div class="ch-label">02 — BIM Architecture & Coordination</div>
+    <h2 class="ch-title"><span class="h-line"><span class="w">Blue Sky</span></span>
+    <span class="h-line"><span class="w serif">Tower, Hong Kong</span></span></h2>
+    <div class="meta">
+      <span class="chip"><b>CLIENT</b> Enzyme Pvt. Ltd.</span>
+      <span class="chip"><b>TYPE</b> Mixed-use</span>
+      <span class="chip"><b>HEIGHT</b> 21 floors · FAR 13.8</span>
+      <span class="chip"><b>DETAIL</b> LOD 350</span>
+      <span class="chip"><b>TOOLS</b> Revit · Navisworks · Twinmotion</span>
+    </div>
+    <p class="mono" style="margin-top:26px;font-size:11px;letter-spacing:.2em;color:var(--muted)">SCROLL — THE GALLERY MOVES SIDEWAYS →</p>
+  </div>
+</section>
+
+<!-- HORIZONTAL GALLERY -->
+<section id="hgal" data-ch="03">
+  <div id="htrack">
+    <div class="hpanel" data-cursor="VIEW"><span class="idx">01 / 06</span><img loading="lazy" class="ph" src="assets/tower_mor.jpg" style="object-position:50% 35%" alt="Morning render"><div class="lab"><span class="serif">morning light on the tower</span><span class="mono">TWINMOTION RENDER</span></div></div>
+    <div class="hpanel" data-cursor="VIEW"><span class="idx">02 / 06</span><img loading="lazy" class="ph" src="assets/tower_eve.jpg" alt="Dusk render"><div class="lab"><span class="serif">dusk, Queen's Road Central</span><span class="mono">TWINMOTION RENDER</span></div></div>
+    <div class="hpanel dark-panel" data-cursor="VIEW"><span class="idx">03 / 06</span><img loading="lazy" src="assets/cut_typical.webp" alt="Typical floor cutaway"><div class="fcap"><i>MODEL</i>TYPICAL FLOOR — CUTAWAY AXONOMETRIC</div></div>
+    <div class="hpanel dark-panel" data-cursor="VIEW"><span class="idx">04 / 06</span>
+      <div class="trio">
+        <figure><img loading="lazy" src="assets/cut_structure.webp" alt="Structural model"><div class="fcap"><i>01</i>STRUCTURAL</div></figure>
+        <figure><img loading="lazy" src="assets/cut_mep.webp" alt="MEP model"><div class="fcap"><i>02</i>MEP</div></figure>
+        <figure><img loading="lazy" src="assets/cut_coordinated.webp" alt="Coordinated model"><div class="fcap"><i>03</i>FEDERATED</div></figure>
+      </div>
+    </div>
+    <div class="hpanel dark-panel paper" data-cursor="VIEW"><span class="idx">05 / 06</span>
+      <div class="trio">
+        <figure><img loading="lazy" src="assets/cut_elev.webp" alt="South elevation"><div class="fcap"><i>01</i>SOUTH ELEVATION</div></figure>
+        <figure><img loading="lazy" src="assets/cut_section.webp" alt="Section"><div class="fcap"><i>02</i>SECTION</div></figure>
+        <figure><img loading="lazy" src="assets/cut_hidden.webp" alt="Hidden line"><div class="fcap"><i>03</i>HIDDEN-LINE</div></figure>
+      </div>
+    </div>
+    <div class="hpanel" data-cursor="VIEW"><span class="idx">06 / 06</span><img loading="lazy" class="ph" src="assets/render_gold.jpg" style="object-position:50% 30%" alt="Golden hour"><div class="lab"><span class="serif">golden hour</span><span class="mono">TWINMOTION RENDER</span></div></div>
+  </div>
+</section>
+
+<!-- QUIET SCALE SCENE -->
+<section id="quiet" data-ch="03">
+  <div class="wrap">
+    <div class="frame" data-cursor="VIEW">
+      <img loading="lazy" src="assets/render_city.jpg" alt="Tower in city context">
+      <div class="qcap"><span class="serif">a new volume above a 1970s structure</span><span class="mono">BLUE SKY TOWER — CONTEXT</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHEETS -->
+<section id="sheets" data-ch="04">
+  <div class="wrap">
+    <div class="ch-label">03 — Structural Design & Detailing</div>
+    <h2 class="ch-title"><span class="h-line"><span class="w">Drawn to</span></span>
+    <span class="h-line"><span class="w serif">be built</span></span></h2>
+    <p style="color:var(--muted);max-width:640px;margin-top:22px">Complete RCC packages for construction issue — foundation to roof: column schedules, grade beams, lift pits, roof beam and slab detailing, staircase sections. IS 456 · IS 1893.</p>
+    <div class="sheet-cols">
+      <div class="scol" data-speed="0">
+        <div class="sheet" data-cursor="VIEW"><img loading="lazy" src="assets/res_foundation.jpg" alt="Foundation details"><div class="cap"><i>01</i>FOUNDATION & COLUMN DETAILS</div></div>
+        <div class="sheet" data-cursor="VIEW"><img loading="lazy" src="assets/res_roofbeam.jpg" alt="Roof beam keyplan"><div class="cap"><i>03</i>ROOF BEAM KEYPLAN & SLAB DETAILS</div></div>
+        <div class="sheet" data-cursor="VIEW"><img loading="lazy" src="assets/apt_columns.jpg" alt="Apartment columns"><div class="cap"><i>05</i>APARTMENT — COLUMN & FOUNDATION</div></div>
+      </div>
+      <div class="scol" data-speed="1">
+        <div class="sheet" data-cursor="VIEW"><img loading="lazy" src="assets/res_sections.jpg" alt="Grade beams"><div class="cap"><i>02</i>SECTIONS · GRADE BEAMS · LIFT PIT</div></div>
+        <div class="sheet" data-cursor="VIEW"><img loading="lazy" src="assets/res_staircase.jpg" alt="Staircase"><div class="cap"><i>04</i>STAIRCASE KEY PLAN & SECTIONS</div></div>
+        <div class="sheet" data-cursor="VIEW"><img loading="lazy" src="assets/apt_roofbeam.jpg" alt="Apartment roof"><div class="cap"><i>06</i>APARTMENT — ROOF KEYPLANS</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE 2 -->
+<section class="quote">
+  <div class="ql"><span>“One of the great beauties of architecture is that</span></div>
+  <div class="ql"><span>each time, it is like life starting all over again.”</span></div>
+  <div class="who">Renzo Piano</div>
+</section>
+
+<!-- ETABS -->
+<section id="etabs" data-ch="05">
+  <div class="bignum">04</div>
+  <div class="wrap">
+    <div class="ch-label">04 — Structural Analysis · AK Consultant · 2025—now</div>
+    <h2 class="ch-title"><span class="h-line"><span class="w">Four towers,</span></span>
+    <span class="h-line"><span class="w serif">end to end</span></span></h2>
+    <p style="color:var(--muted);max-width:660px;margin-top:22px">Modeled, analyzed, and detailed end-to-end in ETABS — gravity + seismic, code compliance, schedules for working drawings. IS 456 · IS 1893 · IS 875 · M30/M40. Identities withheld with the firm's consent.</p>
+    <div class="ak-grid">
+      <div class="ak-card" data-cursor="VIEW"><img loading="lazy" src="assets/cut_ak1.webp" alt="Twin towers"><div class="fcap"><i>01</i>TWIN TOWERS — 2× G+11, ~40 M</div></div>
+      <div class="ak-card" data-cursor="VIEW"><img loading="lazy" src="assets/cut_ak2.webp" alt="Podium tower"><div class="fcap"><i>02</i>G+14 ON PARKING PODIUM, ~54 M</div></div>
+      <div class="ak-card" data-cursor="VIEW"><img loading="lazy" src="assets/cut_ak3.webp" alt="Irregular tower"><div class="fcap"><i>03</i>G+10 — IRREGULAR PLAN, TORSION-VERIFIED</div></div>
+      <div class="ak-card" data-cursor="VIEW"><img loading="lazy" src="assets/cut_ak4.webp" alt="Cluster"><div class="fcap"><i>04</i>3-BLOCK CLUSTER — SEISMIC SEPARATION</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="xp" data-ch="06">
+  <div class="wrap">
+    <div class="ch-label">05 — Experience</div>
+    <h2 class="ch-title"><span class="h-line"><span class="w">The road</span></span>
+    <span class="h-line"><span class="w serif">so far</span></span></h2>
+    <div style="margin-top:40px">
+      <div class="xp-row"><div class="when">2025 — NOW</div><div><h3>Structural Engineer</h3><div class="org">AK CONSULTANT · CHENNAI</div><p>RCC and steel systems for residential, commercial, and industrial projects (G+4 to G+20) in ETABS, STAAD Pro, and CSI SAFE. IS 456 / 800 / 1893 compliance; architectural and MEP coordination; drawings and calculations through construction.</p></div></div>
+      <div class="xp-row"><div class="when">2023</div><div><h3>BIM Architect</h3><div class="org">NOVATR (ONEISTOX)</div><p>21-floor mixed-use high-rise capstone — Revit at LOD 350, Navisworks clash detection, Twinmotion renders; BIM documentation for a residential complex across Revit, BIM 360, and Dynamo.</p></div></div>
+      <div class="xp-row"><div class="when">2022 — 2023</div><div><h3>Civil Engineer</h3><div class="org">GRJ BUILDERS · COIMBATORE</div><p>Construction drawings and design sketches; site coordination and documentation with SketchUp and AutoCAD.</p></div></div>
+    </div>
+    <div class="edu">
+      <div><div class="when">2023 — 2025</div><h4>M.E. Structural Engineering</h4><p>Sri Shakthi Institute of Engineering and Technology · 8.32 CGPA — First Class</p></div>
+      <div><div class="when">2019 — 2022</div><h4>B.E. Civil Engineering</h4><p>KGiSL Institute of Technology · 8.24 CGPA — First Class</p></div>
+      <div><div class="when">2016 — 2019</div><h4>Diploma in Civil Engineering</h4><p>Nachimuthu Polytechnic College · 73.96% — First Class</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-ch="06">
+  <div class="cta">
+    <span class="h-line"><span class="w">Let's build</span></span>
+    <span class="h-line"><span class="w serif">something extraordinary</span></span>
+  </div>
+  <p class="sub">Actively seeking Structural / BIM Engineering roles — Dubai, China, USA. Open to relocation.</p>
+  <div class="c-links">
+    <a class="magnet" href="mailto:prasanth340@gmail.com"><i>✉</i> prasanth340@gmail.com</a>
+    <a class="magnet" href="tel:+9196XX9 XXXXX"><i>☎</i> +91 9196XX9 XXXXX</a>
+    <a class="magnet" href="https://linkedin.com/in/gtprasantharvind" target="_blank" rel="noopener"><i>in</i> gtprasantharvind</a>
+  </div>
+  <div class="c-links" style="margin-top:12px">
+    <a class="magnet" href="GT_Prasanth_Arvind_CV.pdf" download><i>↓</i> CV</a>
+    <a class="magnet" href="GT_Portfolio_Signature.pdf" download><i>↓</i> PORTFOLIO PDF</a>
+    <a class="magnet" href="map.html"><i>◎</i> ATLAS — WHERE I WORK</a>
+    <span><i>◎</i> COIMBATORE, TN, INDIA</span>
+  </div>
+</section>
+
+<footer><span>        © 2026 GT PRASANTH ARVIND</span><span>STRUCTURAL ENGINEER · BIM ENGINEER</span></footer>
+
+<div id="lb"><span class="nav prev">‹</span><img src="" alt=""><span class="nav next">›</span></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+/* ---- resilience: if CDN scripts failed, stub them and show content statically ---- */
+const hasFX = !!(window.gsap && window.ScrollTrigger);
+if(!hasFX){
+  window.gsap = window.gsap || {to:function(){return {};},registerPlugin:function(){},set:function(){}};
+  window.ScrollTrigger = window.ScrollTrigger || {create:function(){return {};},update:function(){},refresh:function(){}};
+  document.documentElement.classList.add('no-fx');
+  var tEl=document.getElementById('htrack');
+  if(tEl){tEl.style.overflowX='auto';tEl.style.width='auto';}
+}
+gsap.registerPlugin(ScrollTrigger);
+const isMobile = matchMedia('(max-width: 820px)').matches;
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ================= preloader (self-contained, guaranteed to finish) ================= */
+(function(){
+  const loader=document.getElementById('loader');
+  const pct=loader.querySelector('.pct'),bar=loader.querySelector('.bar');
+  const imgs=[...document.images].filter(im=>im.getAttribute('src')&&im.loading!=='lazy');
+  let done=0,shown=0,finished=false;
+  const total=Math.max(imgs.length,1);
+  imgs.forEach(im=>{
+    if(im.complete)done++;
+    else{im.addEventListener('load',()=>done++);im.addEventListener('error',()=>done++);}
+  });
+  addEventListener('load',()=>{done=total;});
+  setTimeout(()=>{done=total;},3000);           // absolute cap — never stuck
+  const iv=setInterval(()=>{
+    const target=Math.max(Math.round(done/total*100),Math.min(shown+1,96));
+    if(shown<target){shown=Math.min(shown+3,target);pct.textContent=shown;bar.style.width=shown+'%';}
+    if(shown>=100)finish();
+  },24);
+  function finish(){
+    if(finished)return;finished=true;clearInterval(iv);
+    if(hasFX){
+      gsap.to('#loader',{yPercent:-100,duration:1,ease:'power4.inOut',delay:.15,
+        onComplete:()=>{loader.style.display='none';heroIn();}});
+    }else{
+      loader.style.transition='transform .7s ease, opacity .7s ease';
+      loader.style.transform='translateY(-100%)';loader.style.opacity='0';
+      setTimeout(()=>{loader.style.display='none';},750);
+    }
+  }
+})();
+
+/* ================= hero entrance ================= */
+function heroIn(){
+  if(!hasFX)return;
+  gsap.to('#hero h1 .w',{y:0,duration:1.1,ease:'power4.out',stagger:.12});
+  gsap.to('.hero-serif',{opacity:1,duration:1,delay:.5});
+  gsap.to('.hero-row',{opacity:1,duration:1,delay:.7});
+}
+
+/* ================= custom cursor ================= */
+(function(){
+  if(matchMedia('(hover:none)').matches)return;
+  const dot=document.getElementById('cur'),ring=document.getElementById('cur-ring');
+  let x=0,y=0,rx=0,ry=0;
+  addEventListener('mousemove',e=>{x=e.clientX;y=e.clientY;
+    dot.style.left=x+'px';dot.style.top=y+'px';});
+  (function loop(){rx+=(x-rx)*.14;ry+=(y-ry)*.14;
+    ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();
+  document.querySelectorAll('[data-cursor]').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{ring.classList.add('big');ring.textContent=el.dataset.cursor;});
+    el.addEventListener('mouseleave',()=>{ring.classList.remove('big');ring.textContent='';});
+  });
+})();
+
+/* ================= particle tower ================= */
+(function(){
+  if(!window.THREE)return;
+  const wrap=document.getElementById('three-wrap');
+  const scene=new THREE.Scene();
+  const cam=new THREE.PerspectiveCamera(45,innerWidth/innerHeight,.1,100);
+  cam.position.set(0,0,7);
+  const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+  renderer.setSize(innerWidth,innerHeight);
+  wrap.appendChild(renderer.domElement);
+  const img=new Image();img.src='assets/cut_towerbig.webp';
+  img.onload=()=>{
+    const cv=document.createElement('canvas');const s=150,ratio=img.height/img.width;
+    cv.width=s;cv.height=Math.round(s*ratio);
+    const ctx=cv.getContext('2d');ctx.drawImage(img,0,0,cv.width,cv.height);
+    const d=ctx.getImageData(0,0,cv.width,cv.height).data;
+    const pos=[],col=[];
+    for(let y=0;y<cv.height;y+=2)for(let x=0;x<cv.width;x+=2){
+      const i=(y*cv.width+x)*4;if(d[i+3]<80)continue;
+      pos.push((x/cv.width-.5)*3.4,-(y/cv.height-.5)*3.4*ratio,(Math.random()-.5)*.45);
+      const t=y/cv.height;col.push(.34+t*.2,.72-t*.25,.94-t*.2);
+    }
+    const g=new THREE.BufferGeometry();
+    g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));
+    g.setAttribute('color',new THREE.Float32BufferAttribute(col,3));
+    const m=new THREE.PointsMaterial({size:.022,vertexColors:true,transparent:true,opacity:.95});
+    const pts=new THREE.Points(g,m);
+    pts.position.x=isMobile?0:1.9;if(isMobile){pts.position.y=.5;m.opacity=.4;}
+    scene.add(pts);
+    let mx=0,my=0,prog=0;
+    addEventListener('mousemove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;});
+    if(hasFX){
+      ScrollTrigger.create({trigger:'#hero',start:'top top',end:'bottom top',scrub:true,
+        onUpdate:st=>{prog=st.progress;}});
+    }
+    (function anim(t){
+      requestAnimationFrame(anim);
+      pts.rotation.y=t*.00012+mx*.5+prog*1.4;
+      pts.rotation.x=my*.2+prog*.3;
+      cam.position.z=7-prog*2.4;
+      m.size=.022+prog*.05;
+      m.opacity=(isMobile?.4:.95)*(1-prog);
+      renderer.render(scene,cam);
+    })(0);
+  };
+  addEventListener('resize',()=>{cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();
+    renderer.setSize(innerWidth,innerHeight);});
+})();
+
+/* ================= split helper ================= */
+function splitWords(p){
+  const parts=[];
+  p.childNodes.forEach(n=>{
+    if(n.nodeType===3){n.textContent.split(/\s+/).filter(Boolean).forEach(w=>parts.push('<span class="wd">'+w+'</span>'));}
+    else{const cls=n.className||'';n.textContent.split(/\s+/).filter(Boolean).forEach(w=>parts.push('<span class="wd '+cls+'">'+w+'</span>'));}
+  });
+  p.innerHTML=parts.join(' ');
+}
+
+/* ================= gsap-driven scenes ================= */
+(function(){
+  const p=document.getElementById('reveal-p');splitWords(p);
+  if(!hasFX)return;
+
+  gsap.to('#reveal-p .wd',{opacity:1,stagger:.06,ease:'none',
+    scrollTrigger:{trigger:'#intro .pin-box',start:'top top',end:'+=140%',scrub:true,pin:!reduced}});
+
+  document.querySelectorAll('h2.ch-title').forEach(t=>{
+    gsap.to(t.querySelectorAll('.w'),{y:0,duration:1,ease:'power4.out',stagger:.1,
+      scrollTrigger:{trigger:t,start:'top 82%'}});
+  });
+
+  document.querySelectorAll('.quote').forEach(q=>{
+    gsap.to(q.querySelectorAll('.ql span'),{y:0,duration:1.1,ease:'power4.out',stagger:.14,
+      scrollTrigger:{trigger:q,start:'top 68%'}});
+    gsap.to(q.querySelector('.who'),{opacity:1,duration:1,delay:.5,
+      scrollTrigger:{trigger:q,start:'top 68%'}});
+  });
+
+  const track=document.getElementById('htrack');
+  if(isMobile||reduced){track.style.overflowX='auto';track.style.width='auto';}
+  else{
+    const dist=()=>track.scrollWidth-innerWidth;
+    gsap.to(track,{x:()=>-dist(),ease:'none',
+      scrollTrigger:{trigger:'#hgal',start:'top top',end:()=>'+='+dist(),scrub:1,pin:true,invalidateOnRefresh:true}});
+  }
+
+  gsap.to('#quiet .frame',{scale:1,borderRadius:0,ease:'none',
+    scrollTrigger:{trigger:'#quiet',start:'top 85%',end:'top 15%',scrub:true}});
+
+  if(!isMobile){
+    gsap.to('[data-speed="1"]',{y:-90,ease:'none',
+      scrollTrigger:{trigger:'#sheets',start:'top bottom',end:'bottom top',scrub:true}});
+  }
+
+  gsap.to('.ak-card',{opacity:1,y:0,duration:1,ease:'power3.out',stagger:.14,
+    scrollTrigger:{trigger:'.ak-grid',start:'top 80%'}});
+  gsap.to('#etabs .bignum',{yPercent:24,ease:'none',
+    scrollTrigger:{trigger:'#etabs',start:'top bottom',end:'bottom top',scrub:true}});
+
+  document.querySelectorAll('.xp-row').forEach(r=>{
+    gsap.to(r,{opacity:1,y:0,duration:.9,ease:'power3.out',
+      scrollTrigger:{trigger:r,start:'top 86%'}});
+  });
+
+  gsap.to('#contact .cta .w',{y:0,duration:1.1,ease:'power4.out',stagger:.12,
+    scrollTrigger:{trigger:'#contact',start:'top 70%'}});
+
+  if(!matchMedia('(hover:none)').matches){
+    document.querySelectorAll('.magnet').forEach(b=>{
+      b.addEventListener('mousemove',e=>{
+        const r=b.getBoundingClientRect();
+        gsap.to(b,{x:(e.clientX-r.left-r.width/2)*.3,y:(e.clientY-r.top-r.height/2)*.4,duration:.4});
+      });
+      b.addEventListener('mouseleave',()=>gsap.to(b,{x:0,y:0,duration:.5,ease:'elastic.out(1,.5)'}));
+    });
+  }
+})();
+
+/* ================= chapter counter + progress ================= */
+(function(){
+  const counter=document.querySelector('#counter b');
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting&&e.target.dataset.ch)counter.textContent=e.target.dataset.ch;
+  }),{rootMargin:'-45% 0px -45% 0px'});
+  document.querySelectorAll('section[data-ch]').forEach(el=>io.observe(el));
+  // hide the counter when the footer (bottom of page) is in view
+  const counterBox=document.getElementById('counter');
+  const foot=document.querySelector('footer');
+  if(counterBox&&foot){
+    new IntersectionObserver(es=>es.forEach(e=>{
+      counterBox.classList.toggle('hide',e.isIntersecting);
+    })).observe(foot);
+  }
+  const bar=document.getElementById('progress');
+  addEventListener('scroll',()=>{const h=document.documentElement;
+    bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';},{passive:true});
+})();
+
+/* ================= interactive background: drifting nodes + cursor-lit grid ================= */
+(function(){
+  if(reduced)return;
+  const cv=document.getElementById('bgfx'),ctx=cv.getContext('2d');
+  let W,H,DPR=Math.min(devicePixelRatio,2);
+  function size(){W=innerWidth;H=innerHeight;cv.width=W*DPR;cv.height=H*DPR;
+    cv.style.width=W+'px';cv.style.height=H+'px';ctx.setTransform(DPR,0,0,DPR,0,0);}
+  size();addEventListener('resize',size);
+  const N=isMobile?36:90;
+  const pts=Array.from({length:N},()=>({
+    x:Math.random()*innerWidth,y:Math.random()*innerHeight,
+    vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,
+    r:.6+Math.random()*1.6,z:.3+Math.random()*.7
+  }));
+  let mx=-999,my=-999,scrollV=0,lastY=scrollY;
+  addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
+  addEventListener('scroll',()=>{scrollV=scrollY-lastY;lastY=scrollY;},{passive:true});
+  const GRID=56;
+  (function frame(){
+    requestAnimationFrame(frame);
+    ctx.clearRect(0,0,W,H);
+    if(mx>-500&&!isMobile){
+      const R=260;
+      const gx0=Math.max(0,Math.floor((mx-R)/GRID)*GRID),gx1=Math.min(W,mx+R);
+      const gy0=Math.max(0,Math.floor((my-R)/GRID)*GRID),gy1=Math.min(H,my+R);
+      for(let x=gx0;x<=gx1;x+=GRID){
+        const a=Math.max(0,1-Math.abs(x-mx)/R)*.10;
+        if(a<=0)continue;
+        const g=ctx.createLinearGradient(0,my-R,0,my+R);
+        g.addColorStop(0,'rgba(86,200,240,0)');g.addColorStop(.5,'rgba(86,200,240,'+a+')');g.addColorStop(1,'rgba(86,200,240,0)');
+        ctx.strokeStyle=g;ctx.beginPath();ctx.moveTo(x,Math.max(0,my-R));ctx.lineTo(x,Math.min(H,my+R));ctx.stroke();
+      }
+      for(let y=gy0;y<=gy1;y+=GRID){
+        const a=Math.max(0,1-Math.abs(y-my)/R)*.10;
+        if(a<=0)continue;
+        const g=ctx.createLinearGradient(mx-R,0,mx+R,0);
+        g.addColorStop(0,'rgba(86,200,240,0)');g.addColorStop(.5,'rgba(86,200,240,'+a+')');g.addColorStop(1,'rgba(86,200,240,0)');
+        ctx.strokeStyle=g;ctx.beginPath();ctx.moveTo(Math.max(0,mx-R),y);ctx.lineTo(Math.min(W,mx+R),y);ctx.stroke();
+      }
+    }
+    const drift=Math.max(-2.4,Math.min(2.4,scrollV*.06));scrollV*=.9;
+    for(const p of pts){
+      p.x+=p.vx;p.y+=p.vy-drift*p.z;
+      if(p.x<-20)p.x=W+20;if(p.x>W+20)p.x=-20;
+      if(p.y<-20)p.y=H+20;if(p.y>H+20)p.y=-20;
+      const dx=mx-p.x,dy=my-p.y,d2=dx*dx+dy*dy;
+      if(d2<32000){p.x+=dx*.0012;p.y+=dy*.0012;}
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.283);
+      ctx.fillStyle='rgba(86,200,240,'+(.10+p.z*.16)+')';ctx.fill();
+    }
+    ctx.lineWidth=1;
+    for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+      const a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d=dx*dx+dy*dy;
+      if(d<10000){
+        ctx.strokeStyle='rgba(86,200,240,'+((1-d/10000)*.07)+')';
+        ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
+      }
+    }
+  })();
+})();
+
+/* ================= lightbox ================= */
+(function(){
+  const box=document.getElementById('lb'),im=box.querySelector('img');
+  const imgs=[...document.querySelectorAll('.hpanel img, .sheet img, .ak-card img, #quiet img')];
+  let idx=0;
+  function show(i){idx=(i+imgs.length)%imgs.length;im.src=imgs[idx].src;box.classList.add('open');}
+  imgs.forEach((el,i)=>el.addEventListener('click',()=>show(i)));
+  box.querySelector('.prev').addEventListener('click',e=>{e.stopPropagation();show(idx-1);});
+  box.querySelector('.next').addEventListener('click',e=>{e.stopPropagation();show(idx+1);});
+  box.addEventListener('click',e=>{if(e.target===box||e.target===im)box.classList.remove('open');});
+  document.addEventListener('keydown',e=>{
+    if(!box.classList.contains('open'))return;
+    if(e.key==='Escape')box.classList.remove('open');
+    if(e.key==='ArrowLeft')show(idx-1);
+    if(e.key==='ArrowRight')show(idx+1);
+  });
+})();
+</script>
+</body>
+</html>
