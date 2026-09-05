@@ -754,11 +754,11 @@
 
   /* -------- POI markers + info card -------- */
   var POIS = [
-    { id: 'akc', t: 'AK Consultant', r: 'Structural Engineer · Chennai',
+    { id: 'akc', t: 'AK Consultant', r: 'Structural Design Engineer · Chennai',
       d: 'Structural design & analysis for building projects on India’s east coast.',
       href: 'index.html#xp', x: 252.95, y: 134.87, on: { 1: 1 }, offsetX: 0, offsetY: 0 },
-    { id: 'cbe', t: 'Coimbatore', r: 'GRJ Builders · KGiSL Institute',
-      d: 'Civil Engineer at GRJ Builders; M.E. Structural Engineering at KGiSL. Where I studied and build.',
+    { id: 'cbe', t: 'Coimbatore', r: 'GRJ Builders · KGiSL · Sri Shakthi',
+      d: 'Civil Engineer at GRJ Builders; B.E. Civil at KGiSL Institute of Technology; M.E. Structural Engineering at Sri Shakthi. Where I studied and build.',
       href: 'index.html#xp', x: 183.44, y: 90.43, on: { 1: 1, 2: 1 }, offsetX: 0, offsetY: 0 },
     { id: 'home', t: 'Vadavalli', r: 'Home ground',
       d: 'Western Coimbatore — where the drawings begin.',
